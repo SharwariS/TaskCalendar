@@ -1,0 +1,57 @@
+.taskItem {
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin-bottom: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .taskDetails {
+    display: flex;
+    align-items: left;
+  }
+  
+  .checkbox {
+    margin-right: 8px;
+  }
+  
+  .taskText {
+    margin-left: 8px;
+  }
+  
+  .lineThrough {
+    text-decoration: line-through;
+  }
+  
+  .taskDate {
+    margin-left: 8px;
+    color: gray;
+    font-size: 0.875rem;
+  }
+  
+  .buttonGroup {
+    display: flex;
+    gap: 8px;
+  }
+  
+  .button {
+    padding: 8px;
+    border-radius: 4px;
+    color: white;
+    cursor: pointer;
+  }
+  
+  .completeButton {
+    background-color: #38a169; 
+  }
+  
+  .postponeButton {
+    background-color:#ed8936; 
+  }
+  
+  .cancelButton {
+    background-color: #e53e3e;
+  }
+  

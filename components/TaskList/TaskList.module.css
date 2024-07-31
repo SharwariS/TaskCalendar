@@ -1,0 +1,46 @@
+.task-list {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .task-list > * {
+    border-bottom: 1px solid #ddd;
+    padding: 8px 0;
+  }
+  
+  .task-list > *:last-child {
+    border-bottom: none;
+  }
+
+.filterTasks {
+    display: flex;
+    align-items: center;
+    gap: 8px; /* Add spacing between the label and the dropdown */
+    margin-bottom: 16px;
+}  
+
+.filterTasksDropdown {
+    /* border-radius: 6px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 16px;
+     */
+    
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+
+}  
+
+.filterTasksLabel {
+    /* justify-content: left;
+    color: rgb(1, 17, 17);
+    border-radius: 4px;
+    text-align: left;
+    font-size: 16px; */
+    font-size: 1rem;
+  font-weight: 500;
+    
+}  
+  

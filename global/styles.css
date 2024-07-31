@@ -1,0 +1,84 @@
+/* styles/globals.css */
+body {
+  font-family: Arial, sans-serif;
+  /* background-color: #ece6ee; */
+  background: linear-gradient(135deg, #6a11cb, #2575fc); /* Gradient background */
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+}
+
+.container {
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 40px;
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+/* styles/globals.css or any other CSS file */
+
+.AuthForm_input__FQSQi {
+  flex-direction: column;
+  width: 320px;
+  height: 40px; /* Adjust height as needed */
+  border: 1px solid #ddd;
+  padding: 8px; /* Adjust padding as needed */
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.AuthForm_input__FQSQi:focus {
+  border-color: #9C2CF3; /* Adjust color for focus state */
+  outline: none;
+}
+
+.AuthForm_container__ra3Ce {
+  width: 200px;
+  height: 420px;
+  padding: 16px;
+  border: 2px;
+  background-color: #8210a5;
+}
+
+
+.AuthForm_title__lQjzQ{
+  flex-direction: column;
+  text-align: center;
+  font-size: 30px;
+}
+
+/* global styles.css or other global stylesheet */
+.react-calendar__tile {
+  background: #f7f7f7 !important;
+  color: rgb(95, 39, 95) !important;
+  border-radius: 8px !important;
+  transition: background 0.3s ease !important;
+}
+
+.react-calendar__tile:hover {
+  background: linear-gradient(#3A49F9, #9C2CF3) !important;
+}
+
+.react-calendar__tile--now {
+  background: linear-gradient(#9C2CF3, #3A49F9) !important;
+  color: white !important;
+}
+
+.react-calendar__tile--active {
+  background: #da8bcf !important;
+  color: white !important;
+}
+
+.react-calendar__tile--disabled {
+  background: #f0f0f0 !important;
+  color: #d0d0d0 !important;
+  cursor: not-allowed !important;
+}
