@@ -1,15 +1,22 @@
 // pages/TasksPage.js
-import { useAuth } from '../hooks/useAuth'; // Example hook for auth
+import { useAuthState } from 'react-firebase-hooks/auth';
 import { useState } from 'react';
-import { format } from 'date-fns';
-import TaskList from '../components/TaskList';
+import { auth } from '../firebase/firebaseConfig';
+import TaskList from '../components/TaskList/TaskList';
 import TaskForm from '../components/TaskForm/TaskForm';
-import Calendar from '../components/Calendar';
+import Calendar from '../components/Calendar/Calendar';
 
 const TasksPage = () => {
   const [selectedDate, setSelectedDate] = useState(new Date());
-  const { user } = useAuth(); // Assuming useAuth provides user info
-//   const [currentUserId, setCurrentUserId] = useState('user123'); // Replace with actual user ID logic
+  const [user, loading, error] = useAuthState(auth); // Using useAuthState to get user info
+
+  if (loading) {
+    return <div>Loading...</div>;
+  }
+
+  if (error) {
+    return <div>Error: {error.message}</div>;
+  }
 
   if (!user) {
     return <div>Please log in to view your tasks.</div>;
@@ -18,7 +25,6 @@ const TasksPage = () => {
   // Function to handle date change
   const handleDateChange = (newDate) => {
     console.log("Date in TasksPage file: ", newDate);
-    // setSelectedDate(new Date(newDate));
     setSelectedDate(newDate);
   };
 
@@ -42,6 +48,5 @@ const TasksPage = () => {
     </div>
   );
 };
-
 
 export default TasksPage;
